@@ -3,12 +3,18 @@ Copyright 2010,2012 Michele Cucchi <cucchi@cs.unibo.it>
 developed inside the "VirtualSquare" project www.virtualsquare.org
 Thanks to Ben Gardner <bgardner@wabtec.com> for CRC16 module
 
-Linux Neighbour Logging System is a tool designed to log the adding of new entries to kernel neighbour table, 
+Linux Neighbour Logging System is a tool designed to log the adding of new entries to kernel neighbour table,
 through the analisys of kernel notifications to RTMGRP_NEIGH, the neighbour netlink multicast group.
 
 This software is compatible only for Linux version greater than 2.6.18
 
 To build read INSTALL file.
+
+If you are regenerating the build system from the sources in this repository, install both Autoconf and Automake and run:
+
+    autoreconf --install
+
+This generates the missing helper scripts and the `configure` script. After that, continue with the normal `./configure` and `make` steps described in `INSTALL`.
 
 Command line parameter
 
