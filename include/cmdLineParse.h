@@ -37,9 +37,9 @@
 #define MAXRANGE 15
 
 void parseCmdLine(int argc, char *argv[]);
-inline unsigned char execRX4Setted(void);
-inline unsigned char execRX6Setted(void);
-inline unsigned char execDel4Setted(void);
-inline unsigned char execDel6Setted(void);
+unsigned char execRX4Setted(void);
+unsigned char execRX6Setted(void);
+unsigned char execDel4Setted(void);
+unsigned char execDel6Setted(void);
 
 #endif

@@ -202,25 +202,25 @@ void execCmd(struct neighBourBlock *neighBour, unsigned char opCode, unsigned ch
 	}
 }
 
-inline void setExecIP4RxCmd(char *ip4RxCommand, char **ip4RxArguments)
+void setExecIP4RxCmd(char *ip4RxCommand, char **ip4RxArguments)
 {
 	ip4RxCmdName = ip4RxCommand;
 	ip4RxCmdArgs = ip4RxArguments;
 }
 
-inline void setExecIP6RxCmd(char *ip6RxCommand, char **ip6RxArguments)
+void setExecIP6RxCmd(char *ip6RxCommand, char **ip6RxArguments)
 {
 	ip6RxCmdName = ip6RxCommand;
 	ip6RxCmdArgs = ip6RxArguments;
 }
 
-inline void setExecIP4DelCmd(char *ip4DelCommand, char **ip4DelArguments)
+void setExecIP4DelCmd(char *ip4DelCommand, char **ip4DelArguments)
 {
 	ip4DelCmdName = ip4DelCommand;
 	ip4DelCmdArgs = ip4DelArguments;
 }
 
-inline void setExecIP6DelCmd(char *ip6DelCommand, char **ip6DelArguments)
+void setExecIP6DelCmd(char *ip6DelCommand, char **ip6DelArguments)
 {
 	ip6DelCmdName = ip6DelCommand;
 	ip6DelCmdArgs = ip6DelArguments;

@@ -81,22 +81,22 @@ static const char programName[] = "lnls";
 
 static unsigned char daemonSet = 0, commandLineRange = 0, afCalled = FALSE, interfacesCalled = FALSE, subnetsCalled = FALSE, timeoutCalled = FALSE, execRX4Called = FALSE, execRX6Called = FALSE, execDel4Called = FALSE, execDel6Called = FALSE;
 
-inline unsigned char execRX4Setted(void)
+unsigned char execRX4Setted(void)
 {
 	return execRX4Called;
 }
 
-inline unsigned char execRX6Setted(void)
+unsigned char execRX6Setted(void)
 {
 	return execRX6Called;
 }
 
-inline unsigned char execDel4Setted(void)
+unsigned char execDel4Setted(void)
 {
 	return execDel4Called;
 }
 
-inline unsigned char execDel6Setted(void)
+unsigned char execDel6Setted(void)
 {
 	return execDel6Called;
 }
