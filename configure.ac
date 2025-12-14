@@ -7,6 +7,7 @@ AM_INIT_AUTOMAKE(lnls, 1.0)
 AC_CONFIG_SRCDIR([include/logging.h])
 AC_CONFIG_SRCDIR([src/logging.c])
 AC_CONFIG_HEADERS([config.h])
+AC_USE_SYSTEM_EXTENSIONS
 
 : ${CFLAGS=""}
 

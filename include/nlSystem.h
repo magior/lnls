@@ -53,7 +53,7 @@
 #define IP_GC_EXPIRE 360 // EXPIRE TIME IN SECONDS FOR AN HASH ELEMENT
 
 struct neighBourBlock {
-	unsigned char addressFamily;
+        unsigned char addressFamily;
 
 	// network level address can be inet or inet6 address
 	union {
@@ -78,8 +78,8 @@ struct neighBourBlock {
 
 } __attribute__((packed));
 
-inline void hookRx4(struct neighBourBlock *neighBour);
-inline void hookRx6(struct neighBourBlock *neighBour);
-inline void hookDel4(struct neighBourBlock *neighBour);
-inline void hookDel6(struct neighBourBlock *neighBour);
+void hookRx4(struct neighBourBlock *neighBour);
+void hookRx6(struct neighBourBlock *neighBour);
+void hookDel4(struct neighBourBlock *neighBour);
+void hookDel6(struct neighBourBlock *neighBour);
 #endif

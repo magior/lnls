@@ -376,25 +376,25 @@ static void setSignalHandlers()
 	intervalTimerStart();
 }
 
-inline void hookRx4(struct neighBourBlock *neighBour)
+void hookRx4(struct neighBourBlock *neighBour)
 {
 	if(execRX4Setted())
 		execCmd(neighBour, RX, AF_INET);
 }
 
-inline void hookRx6(struct neighBourBlock *neighBour)
+void hookRx6(struct neighBourBlock *neighBour)
 {
 	if(execRX6Setted())
 		execCmd(neighBour, RX, AF_INET6);
 }
 
-inline void hookDel4(struct neighBourBlock *neighBour)
+void hookDel4(struct neighBourBlock *neighBour)
 {
 	if(execDel4Setted())
 		execCmd(neighBour, DEL, AF_INET);
 }
 
-inline void hookDel6(struct neighBourBlock *neighBour)
+void hookDel6(struct neighBourBlock *neighBour)
 {
 	if(execDel6Setted())
 		execCmd(neighBour, DEL, AF_INET6);

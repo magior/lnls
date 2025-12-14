@@ -1,5 +1,5 @@
 # Makefile.ac for lnls
-AM_CPPFLAGS = -I$(top_srcdir)/include
+AM_CPPFLAGS = -I$(top_srcdir)/include -D_GNU_SOURCE
 AM_CFLAGS = -O2 -s
  
 bin_PROGRAMS=lnls

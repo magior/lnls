@@ -31,7 +31,7 @@
 
 static sigset_t oldState, maskedState;
 
-inline void unMask(void)
+void unMask(void)
 {
 	
 	if (sigprocmask(SIG_SETMASK,&oldState,NULL) < 0)
@@ -41,7 +41,7 @@ inline void unMask(void)
 	}
 }
 
-inline void mask(void)
+void mask(void)
 {
 	if (sigprocmask(SIG_BLOCK,&maskedState,&oldState) < 0)
 	{
